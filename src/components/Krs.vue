@@ -83,6 +83,9 @@ export default {
         this.createchart();
       });
     },
+    cb() {
+      this.createchart();
+    },
     filteredCurs() {
       if (this.filteredCurs.length <= 7) {
         this.modevisor = 0;
@@ -93,6 +96,7 @@ export default {
   },
   methods: {
     createchart() {
+      console.log(this.$refs.chartdiv);
       // eslint-disable-next-line prefer-const
       let chart = am4core.create(this.$refs.chartdiv, am4charts.XYChart);
       chart.paddingRight = 20;
@@ -237,7 +241,6 @@ export default {
   mounted() {
     this.gendata();
     window.addEventListener('resize', this.autoresize);
-    this.createchart();
   },
   beforeDestroy() {
     if (this.chart) {
