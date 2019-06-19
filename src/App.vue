@@ -16,12 +16,5 @@ export default {
   },
   methods: {
   },
-  created() {
-    Object.assign(window, { SVGPathElement: () => {} });
-  },
 };
 </script>
-
-<style lang="scss">
-@import 'assets/krs.scss';
-</style>

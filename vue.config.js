@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: './',
+  publicPath: './', // Фикc белого экрана из-за кривых путей
   configureWebpack: {
     externals: {
       canvas: {},

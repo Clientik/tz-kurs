@@ -57,11 +57,11 @@ body {
     color: #fefefe;
 
     &:hover {
-        background-color: $color-green + 10;
+        background-color: $color-green + #000010;;
     }
 
     &:active {
-        border: 0.5px solid $color-green - 10;
+        border: 0.5px solid $color-green - #000010;
     }
 }
 
