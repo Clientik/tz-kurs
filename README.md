@@ -52,6 +52,17 @@ npm run lint
 ```
 npm run test:unit
 ```
+# Docker
+## Build porject
+```
+docker build -t vuejs/kurs .
+```
+## Docker Container Run
+```
+docker run -it -p 8080:80 --rm --name kurs-0.3.0 vuejs/kurs
+```
+
+
 
 
 
